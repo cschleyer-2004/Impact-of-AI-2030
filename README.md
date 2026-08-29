@@ -51,21 +51,23 @@ python main.py
 
 The script will:
 
-Download the dataset from Kaggle and locate the CSV file.
-Load the data and print a preview, info summary, and descriptive statistics.
-Drop duplicate rows and report missing values.
-Generate and display several plots (each opens in its own window).
-Print key statistics and correlations to the console.
+1) Download the dataset from Kaggle and locate the CSV file.
+2) Load the data and print a preview, info summary, and descriptive statistics.
+3) Drop duplicate rows and report missing values.
+4) Generate and display several plots (each opens in its own window).
+5) Print key statistics and correlations to the console.
+
 Analysis Performed
-Automation Probability by Job Title — bar chart comparing automation risk across roles.
-Automation Probability Distribution — histogram showing the overall spread of automation risk.
-AI Exposure vs Automation Probability — scatter plot plus a manually computed Pearson correlation coefficient.
-Average Skill Level vs Automation Probability — computes an average across all Skill_* columns per job and plots it against automation risk.
-Experience vs Automation Probability — scatter plot of years of experience against automation risk.
-Salary Distribution — histogram of average salaries across roles.
-Automation Probability by Education Level — bar chart of average automation risk grouped by education level.
-Top 10 Most/Least Automatable Jobs — job titles ranked by average automation probability.
-Sampling Analysis — compares the mean automation probability of a random 100-row sample against the full population mean.
+*Automation Probability by Job Title — bar chart comparing automation risk across roles.
+*Automation Probability Distribution — histogram showing the overall spread of automation risk.
+*AI Exposure vs Automation Probability — scatter plot plus a manually computed Pearson correlation coefficient.
+*Average Skill Level vs Automation Probability — computes an average across all Skill_* columns per job and plots it against automation risk.
+*Experience vs Automation Probability — scatter plot of years of experience against automation risk.
+*Salary Distribution — histogram of average salaries across roles.
+*Automation Probability by Education Level — bar chart of average automation risk grouped by education level.
+*Top 10 Most/Least Automatable Jobs — job titles ranked by average automation probability.
+*Sampling Analysis — compares the mean automation probability of a random 100-row sample against the full population mean.
+
 Notes
 Correlation and averaging functions (mean, correlation, avg_skill, get_edu_automation) are implemented manually (without numpy/pandas built-ins) for instructional purposes.
 Each plt.show() call blocks until the plot window is closed; close each window to proceed to the next chart.
